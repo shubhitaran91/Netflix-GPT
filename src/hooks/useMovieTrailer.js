@@ -22,6 +22,7 @@ const useMovieTrailer = (movieId) => {
     dispatch(addTrailerVideo(trailer));
   };
   useEffect(() => {
+    //memoization
     !trailerVideo && getMovieVideos();
   }, []);
 };
